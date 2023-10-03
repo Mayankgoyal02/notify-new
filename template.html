@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Name to User ID Mapping</title>
+</head>
+<body>
+    <h1>Service Name to User ID Mapping</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Service Name</th>
+                <th>User ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for service_name, user_id in data_dict.items() %}
+            <tr>
+                <td>{{ service_name }}</td>
+                <td>{{ user_id }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
